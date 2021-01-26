@@ -28,3 +28,7 @@ form {
   border-radius: 10px;
   font-family: 'Bungee', cursive;
 }
+
+.over-limit {
+  color: red;
+}
