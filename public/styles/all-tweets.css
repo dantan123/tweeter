@@ -4,21 +4,33 @@
 }
 
 .all-tweets img {
-  width: 75px;
+  width: 80px;
+  height: 80px;
 }
 
 .all-tweets header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-#account {
-  margin-left: 30em;
+.account {
+  margin-right: 2em;
   display: none;
 }
 
-section:hover + #account {
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.all-tweets:hover {
+  box-shadow: 10px 5px 5px rgb(148, 148, 238);
+}
+
+.all-tweets:hover .account {
+  color: rgb(148, 148, 238);
   display: block;
 }
 
@@ -28,11 +40,16 @@ textarea {
 
 .all-tweets footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .all-tweets footer img {
   margin-left: 1em;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.tweet-date {
+  font-size: 15px;
 }
