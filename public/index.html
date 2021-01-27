@@ -9,15 +9,10 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-    <!-- Layout CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
-    <!-- Header CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-
-    <!-- Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,7 +33,7 @@
       <span id="tweet-code">Write a new tweet!</span></span>
     </nav>
 
-    <header>
+    <header class="profile-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -50,9 +45,10 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
+        <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
-          <h2>Compose Tweet</h2>
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="submit-tweet">
@@ -61,6 +57,26 @@
           </div>
         </form>
       </section>
+
+      <section class="all-tweets">
+        <article>
+          <header>
+            <img src="/images/profile-hex.png">
+            <h4>Dan</h4>
+            <h4 id='account'>@dtan</h4>
+          </header>
+          <textarea>Hello there!</textarea>
+          <footer>
+            20 days ago
+            <div>
+              <img src="/images/flag.png">
+              <img src="images/share.png">
+              <img src="images/love.png">
+            </div>
+          </footer>
+        </article>
+      </section>
+
     </main>
   </body>
 </html>

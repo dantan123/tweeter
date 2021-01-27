@@ -1,0 +1,38 @@
+.all-tweets {
+  width: 1000px;
+  margin: 1em;
+}
+
+.all-tweets img {
+  width: 75px;
+}
+
+.all-tweets header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#account {
+  margin-left: 30em;
+  display: none;
+}
+
+section:hover + #account {
+  display: block;
+}
+
+textarea {
+  width: 1000px;
+}
+
+.all-tweets footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-tweets footer img {
+  margin-left: 1em;
+  width: 30px;
+  height: 30px;
+}
