@@ -1,11 +1,14 @@
 .all-tweets {
   width: 1000px;
   margin: 1em;
+  border: 2px solid;
+  padding: 1em;
 }
 
 .all-tweets img {
-  width: 80px;
-  height: 80px;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
 }
 
 .all-tweets header {
@@ -15,7 +18,7 @@
 }
 
 .account {
-  margin-right: 2em;
+  margin-right: 1em;
   display: none;
 }
 
@@ -34,10 +37,6 @@
   display: block;
 }
 
-textarea {
-  width: 1000px;
-}
-
 .all-tweets footer {
   display: flex;
   flex-direction: row;
@@ -45,7 +44,7 @@ textarea {
 }
 
 .all-tweets footer img {
-  margin-left: 1em;
+  margin-left: 0.5em;
   width: 20px;
   height: 20px;
 }
