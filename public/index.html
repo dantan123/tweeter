@@ -45,10 +45,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
+        <form>
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="submit-tweet">
@@ -58,29 +57,7 @@
         </form>
       </section>
 
-      <section class="all-tweets">
-        <article>
-          <header>
-            <div class='user-profile'>
-              <img src="/images/profile.png">
-              <h4>Dan</h4>
-            </div>
-            <div>
-              <h4 class='account'>@dtan</h4>
-            </div>
-          </header>
-          <textarea>Hello World!</textarea>
-          <footer>
-            <div class = "tweet-date">20 days ago</div>
-            <div>
-              <img src="/images/flag.png">
-              <img src="images/share.png">
-              <img src="images/like.png">
-            </div>
-          </footer>
-        </article>
-      </section>
-
+      <section class="all-tweets"></section>
     </main>
   </body>
 </html>

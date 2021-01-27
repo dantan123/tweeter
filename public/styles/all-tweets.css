@@ -1,6 +1,9 @@
 .all-tweets {
   width: 1000px;
-  margin: 1em;
+}
+
+article {
+  margin: 2em 0;
   border: 2px solid;
   padding: 1em;
 }
@@ -28,7 +31,7 @@
   justify-content: flex-start;
 }
 
-.all-tweets:hover {
+.all-tweets article:hover {
   box-shadow: 10px 5px 5px rgb(148, 148, 238);
 }
 
