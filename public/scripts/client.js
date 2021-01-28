@@ -26,14 +26,12 @@ const validateTweet = function() {
   const tweetContent = $('#tweet-text').val();
   if (tweetContent.trim().length === 0) {
     $('.error-display').html(`<span> &#9888; Your tweet cannot be empty &#9888; </span>`);
-    $('.error-display').css('display', 'block');
-    $('.new-tweet form').slideDown(1200);
+    $('.error-display').slideDown("slow");
   } else if (tweetContent.length > 140) {
     $('.error-display').html(`<span> &#9888; Your tweet cannot be longer than 140 characters &#9888; </span>`);
-    $('.error-display').css('display', 'block');
-    $('.new-tweet form').slideDown(500);
+    $('.error-display').slideDown("slow");
   } else {
-    $('.error-display').css('display', 'none');
+    $('.error-display').hide();
     return true;
   }
 };

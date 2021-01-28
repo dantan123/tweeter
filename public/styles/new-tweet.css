@@ -42,6 +42,6 @@ textarea {
 .error-display {
   border: 2px red solid;
   color: red;
-  display: none;
   padding: 1em;
+  display: none;
 }
