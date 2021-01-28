@@ -59,7 +59,7 @@ const renderTweets = function(tweets) {
   $(".all-tweets").empty();
   $.each(tweets, function(key, value) {
     let $tweet= createTweetElement(tweets[key]);
-    $(".all-tweets").append($tweet);
+    $(".all-tweets").prepend($tweet);
   });
 };
 
@@ -78,7 +78,7 @@ const createTweetElement = function(tweetData) {
 
   // create footer
   const $footer = $(`<footer></footer>`);
-  $footer.append($(`<div class="tweet-date">${moment(tweetData.created_at).startOf("miliseconds").fromNow()}</div>`));
+  $footer.append($(`<div class="tweet-date">${moment(tweetData.created_at).startOf("second").fromNow()}</div>`));
   $footer.append($(`<div><img src="/images/flag.png"><img src="images/share.png"><img src="images/like.png"></div>`));
   $tweet.append($footer);
 

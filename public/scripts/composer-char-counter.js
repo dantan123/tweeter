@@ -3,7 +3,7 @@ $(document).ready(function() {
     // console.log($(this).val());
     let tweetLength = $(this).val().length;
     $(".counter").text(140 - tweetLength);
-    if (tweetLength >= 140) {
+    if (tweetLength > 140) {
       $(".counter").addClass('over-limit');
     } else {
       $(".counter").removeClass('over-limit');
