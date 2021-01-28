@@ -4,6 +4,7 @@
 }
 
 form {
+  margin-top: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: space-around;
@@ -36,4 +37,11 @@ textarea {
 
 .over-limit {
   color: red;
+}
+
+.error-display {
+  border: 2px red solid;
+  color: red;
+  display: none;
+  padding: 1em;
 }

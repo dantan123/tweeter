@@ -35,7 +35,7 @@ article {
   box-shadow: 10px 5px 5px rgb(148, 148, 238);
 }
 
-.all-tweets:hover .account {
+.all-tweets article:hover .account {
   color: rgb(148, 148, 238);
   display: block;
 }
