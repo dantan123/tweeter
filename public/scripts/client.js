@@ -50,9 +50,10 @@ const loadNewTweet = function() {
     url: "/tweets"
   })
   .then(function(res) {
-    console.log(res[res.length-1]);
+    let $tweet = createTweetElement(res[res.length-1]);
+    $(".all-tweets").prepend($tweet);
   })
-}
+};
 
 const sendTweet = function() {
   $(".new-tweet form").submit(function(event) {
@@ -74,9 +75,10 @@ const sendTweet = function() {
     .then(function() {
       console.log('Success!');
       // not working yet
-      $('#tweet-text').val(function(index, value) {
-        return value.trim();
-      });
+      // $('textarea').val(function(index, value) {
+      //   return value.trim();
+      // });
+      $('#tweet-text').val('');
       loadNewTweet();
     });
   });
