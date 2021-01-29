@@ -4,9 +4,11 @@ Tweeter is a single-page Twitter clone that lets users share their ideas with fr
 
 ## Final Product
 
-### Compose Tweet
+### Compose a Tweet
+!["Screenshot of tweet compose box"](https://github.com/dantan123/tweeter/blob/master/docs/compose-tweet.png?raw=true)
 
 ### Published Tweets
+!["Screenshot of tweets"](https://github.com/dantan123/tweeter/blob/master/docs/published-tweets.png?raw=true)
 
 ## Getting Started
 
