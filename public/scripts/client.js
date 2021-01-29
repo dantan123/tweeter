@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function() {
-  // listen for tweet sending
+  // listen for tweet to be sent
   sendTweet();
 
   // load all tweets
@@ -19,9 +19,10 @@ const loadTweets = function() {
   })
   .then(function(res) {
     renderTweets(res);
-  })
+  });
 };
 
+// verify that the tweet is not empty and no longer than 140 characters
 const validateTweet = function() {
   const tweetContent = $('#tweet-text').val();
   if (tweetContent.trim().length === 0) {
@@ -36,6 +37,7 @@ const validateTweet = function() {
   }
 };
 
+// send tweet to db
 const sendTweet = function() {
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
@@ -56,9 +58,9 @@ const sendTweet = function() {
 };
 
 const renderTweets = function(tweets) {
-  $(".all-tweets").empty();
+  $(".all-tweets").empty(); // clear all the tweets first
   $.each(tweets, function(key, value) {
-    let $tweet= createTweetElement(tweets[key]);
+    const $tweet = createTweetElement(tweets[key]);
     $(".all-tweets").prepend($tweet);
   });
 };
