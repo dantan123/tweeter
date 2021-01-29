@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a single-page Twitter clone that lets users share their ideas with friends.
+Tweeter :bird: is a single-page Twitter clone that lets users share their ideas with friends.
 
 ## [Final Product](docs/)
 
