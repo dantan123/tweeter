@@ -41,6 +41,10 @@ article {
   display: block;
 }
 
+.all-tweets article:hover footer img {
+  display: inline;
+}
+
 .all-tweets footer {
   display: flex;
   flex-direction: row;
@@ -48,6 +52,7 @@ article {
 }
 
 .all-tweets footer img {
+  display: none;
   margin-left: 0.5em;
   width: 0.66em;
   height: 0.66em;
