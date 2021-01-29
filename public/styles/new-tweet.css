@@ -1,6 +1,6 @@
 .new-tweet {
-  width: 1000px;
-  margin: 1em;
+  width: 80%;
+  margin: 1em auto;
 }
 
 form {
@@ -23,6 +23,7 @@ textarea {
 }
 
 .submit-tweet {
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

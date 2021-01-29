@@ -1,5 +1,6 @@
 .all-tweets {
-  width: 1000px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 article {
@@ -48,10 +49,10 @@ article {
 
 .all-tweets footer img {
   margin-left: 0.5em;
-  width: 20px;
-  height: 20px;
+  width: 0.66em;
+  height: 0.66em;
 }
 
 .tweet-date {
-  font-size: 15px;
+  font-size: 0.66em;
 }
