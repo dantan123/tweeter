@@ -22,8 +22,7 @@ nav {
   }
   
   #tweet-code {
-    padding: 3px;
     font-family: 'Courier';
-    font-size: 20px;
+    font-size: 0.8em;
   }
 }
